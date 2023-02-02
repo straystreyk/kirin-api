@@ -1,0 +1,102 @@
+[Thu, 02 Feb 2023 20:08:12 GMT] POST /api/registration: Cannot read properties of undefined (reading 'v4')
+ stack: TypeError: Cannot read properties of undefined (reading 'v4')
+    at /Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:14:48
+    at step (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:44:23)
+    at Object.next (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:25:53)
+    at fulfilled (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:16:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)[Thu, 02 Feb 2023 20:08:51 GMT] POST /api/registration: Cannot read properties of undefined (reading 'v4')
+ stack: TypeError: Cannot read properties of undefined (reading 'v4')
+    at /Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:15:48
+    at step (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:44:23)
+    at Object.next (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:25:53)
+    at fulfilled (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:16:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)[Thu, 02 Feb 2023 20:09:18 GMT] POST /api/registration: Cannot read properties of undefined (reading 'v4')
+ stack: TypeError: Cannot read properties of undefined (reading 'v4')
+    at /Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:14:48
+    at step (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:44:23)
+    at Object.next (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:25:53)
+    at fulfilled (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:16:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)[Thu, 02 Feb 2023 20:09:55 GMT] POST /api/registration: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+ stack: ValidationError: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+    at model.Document.invalidate (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:3125:32)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1465:12)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1148:16)
+    at model.Document (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:166:12)
+    at model.Model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:122:12)
+    at new model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:5092:15)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3197:22
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3232:7
+    at Array.forEach (<anonymous>)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3231:15[Thu, 02 Feb 2023 20:10:15 GMT] POST /api/registration: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+ stack: ValidationError: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+    at model.Document.invalidate (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:3125:32)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1465:12)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1148:16)
+    at model.Document (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:166:12)
+    at model.Model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:122:12)
+    at new model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:5092:15)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3197:22
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3232:7
+    at Array.forEach (<anonymous>)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3231:15[Thu, 02 Feb 2023 20:10:27 GMT] POST /api/registration: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+ stack: ValidationError: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+    at model.Document.invalidate (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:3125:32)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1465:12)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1148:16)
+    at model.Document (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:166:12)
+    at model.Model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:122:12)
+    at new model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:5092:15)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3197:22
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3232:7
+    at Array.forEach (<anonymous>)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3231:15[Thu, 02 Feb 2023 20:10:54 GMT] POST /api/registration: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+ stack: ValidationError: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+    at model.Document.invalidate (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:3125:32)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1465:12)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1148:16)
+    at model.Document (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:166:12)
+    at model.Model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:122:12)
+    at new model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:5092:15)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3197:22
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3232:7
+    at Array.forEach (<anonymous>)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3231:15[Thu, 02 Feb 2023 20:11:58 GMT] POST /api/registration: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+ stack: ValidationError: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+    at model.Document.invalidate (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:3125:32)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1465:12)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1148:16)
+    at model.Document (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:166:12)
+    at model.Model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:122:12)
+    at new model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:5092:15)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3197:22
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3232:7
+    at Array.forEach (<anonymous>)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3231:15[Thu, 02 Feb 2023 20:12:12 GMT] POST /api/registration: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+ stack: ValidationError: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+    at model.Document.invalidate (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:3125:32)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1465:12)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1148:16)
+    at model.Document (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:166:12)
+    at model.Model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:122:12)
+    at new model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:5092:15)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3197:22
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3232:7
+    at Array.forEach (<anonymous>)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3231:15[Thu, 02 Feb 2023 20:12:54 GMT] POST /api/registration: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+ stack: ValidationError: User validation failed: password: Cast to string failed for value "Promise { <pending> }" (type Promise) at path "password", username: Path `username` is required.
+    at model.Document.invalidate (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:3125:32)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1465:12)
+    at model.$set (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:1148:16)
+    at model.Document (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/document.js:166:12)
+    at model.Model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:122:12)
+    at new model (/Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:5092:15)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3197:22
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3232:7
+    at Array.forEach (<anonymous>)
+    at /Users/ttskanyan/WebstormProjects/kirin-api/node_modules/mongoose/lib/model.js:3231:15[Thu, 02 Feb 2023 20:16:18 GMT] POST /api/registration: Пользователь с email: pipa@yandex.ru уже существует
+ stack: Error: Пользователь с email: pipa@yandex.ru уже существует
+    at /Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:11:11
+    at step (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:44:23)
+    at Object.next (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:25:53)
+    at fulfilled (/Users/ttskanyan/WebstormProjects/kirin-api/src/services/userService.ts:16:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
