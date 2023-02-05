@@ -1,17 +1,31 @@
 import jwt from "jsonwebtoken";
 import { TokenModel } from "../models/tokenModel";
 import { Types } from "mongoose";
+import {
+  JWT_REFRESH_EXPIRES_IN,
+  JWT_ACCESS_SECRET,
+  JWT_REFRESH_SECRET,
+  JWT_ACCESS_EXPIRES_IN,
+} from "../constants";
+import { IUser } from "../models/userModel";
 
 const generateTokens = (payload: any) => {
-  if (!process.env.JWT_ACCESS_SECRET || !process.env.JWT_REFRESH_SECRET)
+  if (
+    !JWT_ACCESS_SECRET ||
+    !JWT_REFRESH_SECRET ||
+    !JWT_REFRESH_EXPIRES_IN ||
+    !JWT_ACCESS_EXPIRES_IN
+  )
     throw new Error("TOKEN ERROR");
 
-  const accessToken = jwt.sign(payload, process.env.JWT_ACCESS_SECRET, {
-    expiresIn: "30m",
+  console.log(JWT_ACCESS_EXPIRES_IN, JWT_REFRESH_EXPIRES_IN);
+
+  const accessToken = jwt.sign(payload, JWT_ACCESS_SECRET, {
+    expiresIn: JWT_ACCESS_EXPIRES_IN,
   });
 
-  const refreshToken = jwt.sign(payload, process.env.JWT_REFRESH_SECRET, {
-    expiresIn: "7d",
+  const refreshToken = jwt.sign(payload, JWT_REFRESH_SECRET, {
+    expiresIn: JWT_REFRESH_EXPIRES_IN,
   });
 
   return {
@@ -31,7 +45,46 @@ const saveToken = async (userId: Types.ObjectId, refreshToken: string) => {
   return token;
 };
 
+const removeToken = async (refreshToken: string) => {
+  const tokenData = await TokenModel.deleteOne({ refreshToken });
+
+  return tokenData;
+};
+
+const validateAccessToken = (token: string) => {
+  try {
+    if (!JWT_ACCESS_SECRET) return null;
+
+    const userData = jwt.verify(token, JWT_ACCESS_SECRET);
+
+    return userData;
+  } catch (e) {
+    return null;
+  }
+};
+
+const validateRefreshToken = (token: string) => {
+  try {
+    if (!JWT_REFRESH_SECRET) return null;
+    const userData = jwt.verify(token, JWT_REFRESH_SECRET);
+
+    return userData as IUser & { _id: string };
+  } catch (e) {
+    return null;
+  }
+};
+
+const findRefreshToken = async (refreshToken: string) => {
+  const token = await TokenModel.findOne({ refreshToken });
+
+  return token;
+};
+
 export const tokenService = {
   generateTokens,
   saveToken,
+  removeToken,
+  validateAccessToken,
+  validateRefreshToken,
+  findRefreshToken,
 };

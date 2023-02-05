@@ -28,12 +28,15 @@ export const errorMiddleware = (
   res: Response,
   next: NextFunction
 ) => {
-  const errStatus = err?.statusCode || 500;
+  const errStatus = err?.status || err?.statusCode || 500;
   const errMsg = err?.message || "Something went wrong";
+  const errors = err?.errors || [];
+
   res.status(errStatus).json({
     success: false,
     status: errStatus,
     message: errMsg,
     stack: IS_DEV ? err.stack : {},
+    errors,
   });
 };

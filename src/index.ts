@@ -21,9 +21,9 @@ const startAPI = async () => {
     mongoose.set("strictQuery", true);
     await mongoose.connect(DB_CONNECTION_STRING as string);
 
-    app.listen(+PORT, "127.0.0.1", () => {
+    app.listen(+PORT, () => {
       const port = chalk.bgYellow.black(` Server started on PORT:${PORT} `);
-      const link = chalk.bgYellow.black(` Link is http://127.0.0.1:${PORT} `);
+      const link = chalk.bgYellow.black(` Link is http://localhost:${PORT} `);
 
       console.log(port + "\n" + link);
     });

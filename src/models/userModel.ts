@@ -7,6 +7,8 @@ export interface IUser {
   name?: string;
   isActivated: boolean;
   activationLink?: string;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 const userSchema = new Schema<IUser>(
@@ -39,7 +41,9 @@ const userSchema = new Schema<IUser>(
       type: String,
     },
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+  }
 );
 
 export const UserModel = model("User", userSchema);
