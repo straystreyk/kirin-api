@@ -3,7 +3,6 @@ import { ValidationError } from "express-validator";
 export class ApiError extends Error {
   status;
   errors;
-  name;
 
   constructor(
     status: number,
@@ -11,7 +10,6 @@ export class ApiError extends Error {
     errors: string[] | ValidationError[] = []
   ) {
     super(message);
-    this.name = "Api Error";
     this.status = status;
     this.errors = errors;
   }

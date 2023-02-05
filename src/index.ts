@@ -2,15 +2,17 @@ import express from "express";
 import cookieParser from "cookie-parser";
 import chalk from "chalk";
 import mongoose from "mongoose";
+import cors from "cors";
 
 import { router } from "./router";
-import { DB_CONNECTION_STRING, PORT } from "./constants";
+import { CLIENT_URL, DB_CONNECTION_STRING, PORT } from "./constants";
 import { errorLogger, errorMiddleware } from "./middlewares/errorMiddleware";
 
 const app = express();
 app
   .disable("x-powered-by")
   .use(express.json())
+  .use(cors())
   .use(cookieParser())
   .use("/api", router)
   .use(errorLogger)
